@@ -15,6 +15,10 @@
 		FA7D74321FBFDB22003B3DB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7D74301FBFDB22003B3DB8 /* LaunchScreen.storyboard */; };
 		FA7D743D1FBFDB22003B3DB8 /* someAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D743C1FBFDB22003B3DB8 /* someAnimationTests.swift */; };
 		FA7D74481FBFDB22003B3DB8 /* someAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D74471FBFDB22003B3DB8 /* someAnimationUITests.swift */; };
+		FA7D74581FBFDC04003B3DB8 /* aViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7D74551FBFDC03003B3DB8 /* aViewController.xib */; };
+		FA7D74591FBFDC04003B3DB8 /* aViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D74561FBFDC03003B3DB8 /* aViewController.swift */; };
+		FA7D745A1FBFDC04003B3DB8 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D74571FBFDC03003B3DB8 /* Extension.swift */; };
+		FA7D745C1FBFDC18003B3DB8 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D745B1FBFDC18003B3DB8 /* Define.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		FA7D74431FBFDB22003B3DB8 /* someAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = someAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7D74471FBFDB22003B3DB8 /* someAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = someAnimationUITests.swift; sourceTree = "<group>"; };
 		FA7D74491FBFDB22003B3DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7D74551FBFDC03003B3DB8 /* aViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = aViewController.xib; sourceTree = "<group>"; };
+		FA7D74561FBFDC03003B3DB8 /* aViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aViewController.swift; sourceTree = "<group>"; };
+		FA7D74571FBFDC03003B3DB8 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		FA7D745B1FBFDC18003B3DB8 /* Define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,9 @@
 		FA7D74231FBFDB22003B3DB8 /* someAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				FA7D74561FBFDC03003B3DB8 /* aViewController.swift */,
+				FA7D74551FBFDC03003B3DB8 /* aViewController.xib */,
+				FA7D74571FBFDC03003B3DB8 /* Extension.swift */,
 				FA7D74241FBFDB22003B3DB8 /* AppDelegate.swift */,
 				FA7D74261FBFDB22003B3DB8 /* ViewController.swift */,
 				FA7D74281FBFDB22003B3DB8 /* Main.storyboard */,
@@ -106,6 +117,7 @@
 				FA7D74301FBFDB22003B3DB8 /* LaunchScreen.storyboard */,
 				FA7D74331FBFDB22003B3DB8 /* Info.plist */,
 				FA7D742B1FBFDB22003B3DB8 /* someAnimation.xcdatamodeld */,
+				FA7D745B1FBFDC18003B3DB8 /* Define.swift */,
 			);
 			path = someAnimation;
 			sourceTree = "<group>";
@@ -235,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7D74581FBFDC04003B3DB8 /* aViewController.xib in Resources */,
 				FA7D74321FBFDB22003B3DB8 /* LaunchScreen.storyboard in Resources */,
 				FA7D742F1FBFDB22003B3DB8 /* Assets.xcassets in Resources */,
 				FA7D742A1FBFDB22003B3DB8 /* Main.storyboard in Resources */,
@@ -262,8 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7D745A1FBFDC04003B3DB8 /* Extension.swift in Sources */,
+				FA7D74591FBFDC04003B3DB8 /* aViewController.swift in Sources */,
 				FA7D74271FBFDB22003B3DB8 /* ViewController.swift in Sources */,
 				FA7D74251FBFDB22003B3DB8 /* AppDelegate.swift in Sources */,
+				FA7D745C1FBFDC18003B3DB8 /* Define.swift in Sources */,
 				FA7D742D1FBFDB22003B3DB8 /* someAnimation.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,7 +450,7 @@
 				DEVELOPMENT_TEAM = ER8EZBS25Y;
 				INFOPLIST_FILE = someAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jt.zx.someAnimation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jt.zx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,7 +465,7 @@
 				DEVELOPMENT_TEAM = ER8EZBS25Y;
 				INFOPLIST_FILE = someAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jt.zx.someAnimation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jt.zx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
